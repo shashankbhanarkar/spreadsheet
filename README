@@ -1,0 +1,70 @@
+# React Spreadsheet Assignment
+
+This project is a React-based spreadsheet/table UI built as part of an intern assignment at Inscripts. It demonstrates the use of modern React, TypeScript, and table libraries to create a customizable, interactive data table.
+
+## Features
+
+- Customizable columns and headers
+- Row numbering (`#` column)
+- Status and priority color coding
+- Responsive design with Tailwind CSS
+- Data-driven from `src/data/data.ts`
+- Modular code structure
+
+## Folder Structure
+
+```
+src/
+  components/    # React components (Spreadsheet, Header, ToolBar, etc.)
+  config/        # Table column definitions
+  data/          # Table data source
+  assets/        # Images and SVGs
+  App.tsx        # Main app entry
+```
+
+## Getting Started
+
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open your browser**
+   - Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
+
+## Customization
+
+- **Edit columns:**  
+  Modify `src/config/columns.tsx` to change table columns, headers, and cell rendering.
+
+- **Edit data:**  
+  Update `src/data/data.ts` to change the spreadsheet's data rows.
+
+- **Styling:**  
+  Tailwind CSS classes are used throughout for easy customization.
+
+## Scripts
+
+- `npm run dev` — Start development server
+- `npm run build` — Build for production
+- `npm run preview` — Preview production build
+
+## Requirements
+
+- Node.js 20.19.0 or newer (recommended)
+- npm 10.x or newer
+
+## Notes
+
+- If you encounter dependency warnings with React 19 and some table libraries, use `--legacy-peer-deps` with `npm install`.
+- For any issues, check your Node.js and npm versions.
+
+---
+
+**Author:** Inscripts Intern Assignment  
+**License:** MIT (or as specified by your organization)
